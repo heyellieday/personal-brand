@@ -1,0 +1,10 @@
+<%= simple_form_for @project, url: url do |f| %>
+  <%= f.input :job_title %>
+  <%= f.input :organization_name %>
+  <%= f.input :summary %>
+  <%= f.input :location %>
+   <%= f.input :website %>
+  <%= f.input :brand_image %>
+  <%= f.input :cover_image %>
+  <%= f.button :submit %>
+<% end %>

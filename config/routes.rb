@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
+  resources :projects, only: [:show, :index]
+
   namespace :manage, :path => "dashboard" do
     mount Soulmate::Server, :at => "autocomplete"
     resources :projects

@@ -1,0 +1,22 @@
+<% content_for :header do %>
+  <div class="intro-text">
+      <span class="name"><%= @project.organization_name %></span>
+      <p id="header-intro"> <%= @project.job_title %></p>
+  </div>
+  <div class="col-lg-8 col-lg-offset-2 text-center">
+      <!-- <a href="#portfolio" target="_self" class="btn btn-lg btn-outline">
+          <i class="fa fa-email"></i> Work with me
+      </a> -->
+  </div>
+  <style>
+  	header {
+		    text-align: center;
+		    color: #fff;
+		    background: url('<%= image_url(@project.cover_image) %>') no-repeat center fixed;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+  </style>
+<% end %>
