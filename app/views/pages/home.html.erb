@@ -1,6 +1,5 @@
  <!-- Portfolio Grid Section -->
  <%= render '/pages/home/projects' %>
- <%= render '/pages/home/project_icons' %>
 
 <!-- About Section -->
 <section class="success" id="about">
@@ -26,16 +25,18 @@
             </div>
             <hr>
         </div>
-        <div ng-repeat="post in posts" class="row container">
+        <div class="row container">
+        <% @posts.each do |post| %>
             <div class="col-lg-8 col-lg-offset-2 post">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3>{{post.title}}</h3>
-                        </div>
-                        <p>{{post.subtitle}}</p>
-                        <h3><a target="_blank" href="{{post.url}}">Read More</a></h3>
-                    </div>
+              <div class="caption">
+                  <div class="caption-content">
+                      <h3><%= post.title %></h3>
+                  </div>
+                  <p><%= post.subtitle %></p>
+                  <h3><a target="_blank" href="<%= post.url %>">Read More</a></h3>
+              </div>
             </div>
+         <% end %>
         </div>
     </div>
 </section>

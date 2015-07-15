@@ -1,5 +1,4 @@
 module Medium
-
 	class Posts
 
 		require "mechanize"

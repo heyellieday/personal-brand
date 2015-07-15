@@ -1,7 +1,25 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  #get 'signup' => redirect('/404.html')
+
+  devise_for :users, path: "", path_names: {
+    sign_in: 'login',
+    sign_out: 'logout',
+    sign_up: 'signup'
+  }
 
   root 'pages#home'
+
+  namespace :manage, :path => "dashboard" do
+    mount Soulmate::Server, :at => "autocomplete"
+    resources :projects
+    # authenticate :user, lambda { |u| u.has_role? :admin } do
+    #   mount Sidekiq::Web => '/sidekiq'
+    # end
+  end
+
+  namespace :api do
+    jsonapi_resources :projects
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

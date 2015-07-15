@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use SCSS for stylesheets
@@ -88,8 +88,6 @@ gem 'simple_form'
 gem 'puma'
 # USer dalli for accessing memcached
 gem 'dalli'
-# Use New Relic for application metrics
-gem 'newrelic_rpm'
 # Use Skylight for app dats
 gem "skylight"
 # Use Evercookie for super cookies
