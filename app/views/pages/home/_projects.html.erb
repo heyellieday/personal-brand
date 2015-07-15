@@ -9,7 +9,7 @@
             <div class="row">
             <% @projects.each do |project| %>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="<%= project_path(project) %>" class="portfolio-link">
+                    <div href="<%= project_path(project) %>" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <h3><%= project.organization_name %></h3>
@@ -17,7 +17,7 @@
                             </div>
                         </div>
                         <img src="<%= project.brand_image.url %>" class="img-responsive" alt="">
-                    </a>
+                    </div>
                 </div>
             <% end %>
             </div>
