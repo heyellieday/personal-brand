@@ -1,0 +1,124 @@
+.navbar-brand{
+  margin-top: -20px;
+}
+
+#profile-img {
+
+}
+
+.navbar-default .navbar-nav > li > a {
+color: white;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color:white;
+   background-color: #43cbb3;
+}
+
+#portfolio h2{
+  color:#f49ac1;
+}
+
+#posts h2{
+  color:#f49ac1;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background:url('../images/background-heyellieday.jpg') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about{
+  background-color:#f49ac1;
+   background:url('../images/mission-background.jpg') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header-intro{
+  margin: 0 auto;
+  max-width: 750px;
+  font-size: 1.7em;
+  color: white;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #43cbb3;
+}
+
+footer .footer-below {
+padding: 25px 0;
+    background-color: #a1e5d9;
+}
+
+.btn-outline{
+  border-radius:0px;
+}
+
+.about{
+  text-align: center;
+}
+
+ h3{
+    margin-bottom: 25px;
+  }
+
+
+section
+    h2{
+    margin-bottom: 25px;
+  }
+  
+  .btn-social{
+    border-radius:100%;
+  }
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(161,229,217,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.submit{
+  width:100%;
+  margin: 0 auto;
+  .btn-submit {
+  border-color: #43cbb3;
+  color: #43cbb3;
+  margin: 0 auto;
+margin-top: 25px;
+width: 140px;
+display: table;
+}
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  border-color:transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: white;
+}
+
+.post { border-top: 1px solid #eeeeee; padding-bottom: 10px;}
+
+body {
+  font-family: 'Oxygen', serif;
+}
+
+.list-inline {
+  margin-top: -20px;
+  margin-left: -5px;
+}

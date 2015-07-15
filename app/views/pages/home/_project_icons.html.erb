@@ -1,0 +1,39 @@
+<div class="modals"  ng-controller="ModalCtrl">
+    <div ng-repeat="id in ids" class="portfolio-modal modal fade" id="portfolioModal{{id.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="cover" style="background: url({{id.cover}}) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;" class="img-responsive img-centered" alt="">
+  </div>
+        <div class="modal-content" ng-init="id.bio = sanitize(id.bio)">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{id.name}}</h2>
+                            <div ng-bind-html="id.bio"></div>
+                            <ul class="list-inline item-details">
+                                <li>Location:
+                                    <strong>{{id.location}}
+                                    </strong>
+                                </li>
+                                <li>Website:
+                                    <strong><a href="{{id.url}}">{{id.name}}</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
