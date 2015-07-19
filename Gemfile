@@ -70,8 +70,6 @@ gem 'omniauth'
 gem 'authority'
 # Use rolify for User Roles
 gem 'rolify', '~> 4.0.0'
-# Use Font Awesome Rails for fonts
-gem 'font-awesome-rails'
 # Use Mini Magick for image processing
 gem 'mini_magick'
 # Use Will Paginate for infinite scrolling
