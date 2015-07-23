@@ -75,6 +75,21 @@
 
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<script>
+    $(document).ready(function(){       
+       var scroll_start = 0;
+       var startchange = $('#portfolio');
+       var offset = startchange.offset();
+       $(document).scroll(function() { 
+          scroll_start = $(this).scrollTop();
+          if(scroll_start > offset.top - 100) {
+              $('.navbar-default').css('background-color', 'rgba(244,154,193, 0.95)');
+           } else {
+              $('.navbar-default').css('background-color', 'transparent');
+           }
+       });
+    });
+</script>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
