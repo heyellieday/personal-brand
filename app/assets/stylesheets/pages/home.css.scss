@@ -8,32 +8,46 @@
   }
   #what-im-doing{
     padding: 0 0;
-    -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
-     -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
-          box-shadow: 0px 0px 20px 0px $brand-alternate;
+    // -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
+    //  -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
+    //       box-shadow: 0px 0px 20px 0px $brand-alternate;
   }
-  .doing-section{
-    border-top: 1px dotted #DCDCDC;
+ 
+  #recognition{
     padding: 0 0;
-    > .doing{
+    // -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
+    //  -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
+    //       box-shadow: 0px 0px 20px 0px $brand-alternate;
+  }
+
+   #posts{
+    padding: 0 0;
+    // -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
+    //  -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
+    //       box-shadow: 0px 0px 20px 0px $brand-alternate;
+  }
+  .grid-section{
+    padding: 0 0;
+    > .grid-item{
       transition: all .2s ease-in-out;
+      border-bottom: 1px dotted #DCDCDC;
+      border-top: 1px dotted #DCDCDC;
       text-decoration: none;
       cursor:pointer;
 
       padding: 0;
       padding-top: 75px;
 
-       color: $brand-main;
+      color: $brand-main;
 
-      .doing-heading{
+      .grid-heading{
         margin: 0 auto;
         h3{
-          color: $brand-main; 
           text-align: center;
           font-size: 3em; 
         }
       }
-      .doing-content{
+      .grid-content{
         padding-top: 15px;
         p{
           text-align: center;
@@ -44,30 +58,31 @@
       height: 300px;
     
     }
-    :hover{
-      color: $brand-alternate !important;
+
+    a:hover{
+      // color: $brand-alternate !important;
+      border-bottom: 1px dotted $brand-third;
+      border-top: 1px dotted $brand-third;
     }
      > :first-child{
       border-right: 1px dotted #DCDCDC;
-      //  :hover{
-      //   transform: scale(1.1);
-      // }
-        // .doing-heading{
-        //   h3{
-        //     color: $brand-alternate;
-        //   }
-        //   h3:hover{
-        //     color: $brand-main; 
-        //   }
-        // }
+
     }
-    // > :first-child:hover{
-    //   border-right: 1px solid $brand-alternate;
+    > :first-child:hover{
+      border-right: 1px dotted $brand-third;
+      margin-right: -1px;
 
-    // }
-  }
+    }
+     > :last-child{
+      border-left: 1px dotted #DCDCDC;
+      margin-left: -1px;
 
-  #what-im-doing{
+    }
+    > :last-child:hover{
+      margin-left: -1px;
+      border-left: 1px dotted $brand-third;
+
+    }
 
   }
 
@@ -78,6 +93,15 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    a{
+      color:white;
+      font-size: 1.5em;
+
+    }
+    a:hover{
+      color: $brand-alternate;
+    }
   }
 
   #portfolio .portfolio-item .portfolio-link .caption {

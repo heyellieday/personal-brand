@@ -23,10 +23,10 @@
   </style>
 <% end %>
 
- <!-- Portfolio Grid Section -->
- <%= render '/pages/home/projects' %>
+ <!-- Work/Projects Section -->
+ <%= render '/pages/home/what_im_doing' %>
 
-<!-- About Section -->
+<!-- About Grid Section -->
 <section class="success" id="about">
     <div class="container">
         <div class="row">
@@ -38,31 +38,15 @@
             <div class="col-lg-8 col-lg-offset-2 about">
             	<p></p>
                 <p>I’m making tech inclusive and accessible to <em>all</em> women through education, collaboration, and code. By teaching and collaborating with under-served women and fostering honest conversations about diversity, I am dedicated towards creating a trans-inclusive tech community for women. </p>
+                <a href="#">Learn More</a>
             </div>
         </div>
     </div>
 </section>
-<section id="posts">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center posts-title">
-                <h2>Latest Posts</h2>
-            
-            </div>
-            <hr>
-        </div>
-        <div class="row container">
-        <% @posts.each do |post| %>
-            <div class="col-lg-8 col-lg-offset-2 post">
-              <div class="caption">
-                  <div class="caption-content">
-                      <h3><%= post.title %></h3>
-                  </div>
-                  <p><%= post.subtitle %></p>
-                  <h3><a target="_blank" href="<%= post.url %>">Read More</a></h3>
-              </div>
-            </div>
-         <% end %>
-        </div>
-    </div>
-</section>
+
+<!-- Recognition Grid Section -->
+ <%= render '/pages/home/recognition' %>
+
+ <!-- Posts Grid Section -->
+ <%= render '/pages/home/posts' %>
+
