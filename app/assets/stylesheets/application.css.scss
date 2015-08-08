@@ -13,8 +13,9 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "vendor/freelancer";
 @import "globals/variables";
 @import "globals/typography";
-@import "vendor/freelancer";
+@import "globals/navbar";
 @import "general";
 @import "pages/home";

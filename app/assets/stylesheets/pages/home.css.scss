@@ -8,27 +8,23 @@
   }
   #what-im-doing{
     padding: 0 0;
-    // -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
-    //  -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
-    //       box-shadow: 0px 0px 20px 0px $brand-alternate;
   }
  
   #recognition{
     padding: 0 0;
-    // -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
-    //  -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
-    //       box-shadow: 0px 0px 20px 0px $brand-alternate;
+
   }
 
    #posts{
     padding: 0 0;
-    // -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
-    //  -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
-    //       box-shadow: 0px 0px 20px 0px $brand-alternate;
+  }
+   #skills{
+    padding: 0 0;
   }
   .grid-section{
     padding: 0 0;
     > .grid-item{
+
       transition: all .2s ease-in-out;
       border-bottom: 1px dotted #DCDCDC;
       border-top: 1px dotted #DCDCDC;
@@ -61,6 +57,7 @@
 
     a:hover{
       // color: $brand-alternate !important;
+      background-color: $brand-alternate-light;
       border-bottom: 1px dotted $brand-third;
       border-top: 1px dotted $brand-third;
     }
@@ -70,16 +67,13 @@
     }
     > :first-child:hover{
       border-right: 1px dotted $brand-third;
-      margin-right: -1px;
 
     }
      > :last-child{
       border-left: 1px dotted #DCDCDC;
-      margin-left: -1px;
 
     }
     > :last-child:hover{
-      margin-left: -1px;
       border-left: 1px dotted $brand-third;
 
     }
