@@ -14,7 +14,7 @@
         <!-- <script src="//use.typekit.net/fgj1nny.js"></script> -->
  <!--  <script>try{Typekit.load();}catch(e){}</script> -->
   </head>
-  <body>
+  <body class="<%= body_class %>">
   	<%= render "layouts/navbar" %>
 
     <!-- Header -->
@@ -78,11 +78,11 @@
 <script>
     $(document).ready(function(){       
        var scroll_start = 0;
-       var startchange = $('#portfolio');
+       var startchange = $('header');
        var offset = startchange.offset();
        $(document).scroll(function() { 
           scroll_start = $(this).scrollTop();
-          if(scroll_start > offset.top - 100) {
+          if(scroll_start > offset.top) {
               $('.navbar-default').css('background-color', 'rgba(179,255,242, 0.95)');
            } else {
               $('.navbar-default').css('background-color', 'transparent');

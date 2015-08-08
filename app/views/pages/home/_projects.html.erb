@@ -1,25 +1,44 @@
- <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>What I do</h2>
-                
-                </div>
-            </div>
-            <div class="row">
-            <% @projects.each do |project| %>
-                <div class="col-sm-4 portfolio-item">
-                    <div href="<%= project_path(project) %>" class="portfolio-link">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h3><%= project.organization_name %></h3>
-                                <h4><%= project.job_title %></h4>
-                            </div>
-                        </div>
-                        <img src="<%= project.brand_image.url %>" class="img-responsive" alt="">
+ <section id="what-im-doing">
+        <div>
+           <!--  <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>What I Do</h2>
+                        <p>I'm a freelance web developer that creates awesome applications and sites that are joy to use. I work with a variety of clients and have some cool side projects of my own, such as the site you are on right now.</p>
                     </div>
                 </div>
-            <% end %>
+            </div> -->
+            <div class="row doing-section">
+                <a class="col-sm-6 work doing">
+                    <div class="doing-heading">
+                        <h3>Work</h3>
+                    </div>
+                    <div class="doing-content">
+                        <p>View examples of my past work.</p>
+                    </div>
+                </a>
+                <a class="col-sm-6 projects doing">
+                    <div class="doing-heading">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="doing-content">
+                        <p>Explore a collection of my open source projects.</p>
+                    </div>
+                </a>
             </div>
         </div>
 </section>
+
+<% @projects.each do |project| %>
+   <!--  <div class="col-sm-4 portfolio-item">
+        <div href="<%= project_path(project) %>" class="portfolio-link">
+            <div class="caption">
+                <div class="caption-content">
+                    <h3><%= project.organization_name %></h3>
+                    <h4><%= project.job_title %></h4>
+                </div>
+            </div>
+            <img src="<%= project.brand_image.url %>" class="img-responsive" alt="">
+        </div>
+    </div> -->
+<% end %>

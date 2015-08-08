@@ -2,38 +2,109 @@
   color:#f49ac1;
 }
 
+.pages-home{
+  header{
+    border-top: 5px solid $brand-alternate;
+  }
+  #what-im-doing{
+    padding: 0 0;
+    -webkit-box-shadow: 0px 0px 20px 0px $brand-alternate;
+     -moz-box-shadow: 0px 0px 20px 0px $brand-alternate;
+          box-shadow: 0px 0px 20px 0px $brand-alternate;
+  }
+  .doing-section{
+    border-top: 1px dotted #DCDCDC;
+    padding: 0 0;
+    > .doing{
+      transition: all .2s ease-in-out;
+      text-decoration: none;
+      cursor:pointer;
+
+      padding: 0;
+      padding-top: 75px;
+
+       color: $brand-main;
+
+      .doing-heading{
+        margin: 0 auto;
+        h3{
+          color: $brand-main; 
+          text-align: center;
+          font-size: 3em; 
+        }
+      }
+      .doing-content{
+        padding-top: 15px;
+        p{
+          text-align: center;
+
+        }
+      }
+      
+      height: 300px;
+    
+    }
+    :hover{
+      color: $brand-alternate !important;
+    }
+     > :first-child{
+      border-right: 1px dotted #DCDCDC;
+      //  :hover{
+      //   transform: scale(1.1);
+      // }
+        // .doing-heading{
+        //   h3{
+        //     color: $brand-alternate;
+        //   }
+        //   h3:hover{
+        //     color: $brand-main; 
+        //   }
+        // }
+    }
+    // > :first-child:hover{
+    //   border-right: 1px solid $brand-alternate;
+
+    // }
+  }
+
+  #what-im-doing{
+
+  }
+
+  #about{
+    background-color:#f49ac1;
+     background: image-url('mission-background.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #portfolio .portfolio-item .portfolio-link .caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: rgba(161,229,217,.9);
+      -webkit-transition: all ease .5s;
+      -moz-transition: all ease .5s;
+      transition: all ease .5s;
+  }
+  .submit{
+    width:100%;
+    margin: 0 auto;
+    .btn-submit {
+      border-color: #43cbb3;
+      color: #43cbb3;
+      margin: 0 auto;
+    margin-top: 25px;
+    width: 140px;
+    display: table;
+    }
+  }
+}
+
 #posts h2{
   color:#f49ac1;
 }
 
-#about{
-  background-color:#f49ac1;
-   background: image-url('mission-background.jpg') no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(161,229,217,.9);
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-}
-.submit{
-  width:100%;
-  margin: 0 auto;
-  .btn-submit {
-  border-color: #43cbb3;
-  color: #43cbb3;
-  margin: 0 auto;
-margin-top: 25px;
-width: 140px;
-display: table;
-}
-}
