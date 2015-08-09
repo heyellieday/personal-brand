@@ -17,9 +17,19 @@ Rails.application.routes.draw do
 
   resources :projects, only: [:show, :index]
 
+  resources :organizations, path: "work", only: [:index]
+
   resources :posts, only: [:index]
 
   resources :skills, only: [:index]
+
+  resources :achievements, only: [:index]
+
+  namespace :recognition do 
+    # resources :successes, only: [:index]
+    # resources :awards, only: [:index]
+    resources :mentions, only: [:index]
+  end
 
   namespace :manage, :path => "dashboard" do
     mount Soulmate::Server, :at => "autocomplete"
