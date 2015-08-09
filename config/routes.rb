@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'skills/index'
+
+  get 'skills/show'
+
+  get 'posts/index'
+
   #get 'signup' => redirect('/404.html')
 
   devise_for :users, path: "", path_names: {
@@ -10,6 +16,10 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   resources :projects, only: [:show, :index]
+
+  resources :posts, only: [:index]
+
+  resources :skills, only: [:index]
 
   namespace :manage, :path => "dashboard" do
     mount Soulmate::Server, :at => "autocomplete"

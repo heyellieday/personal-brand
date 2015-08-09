@@ -1,7 +1,7 @@
 <% content_for :header do %>
   <div class="intro-text">
-      <span class="name">Posts<span>
-      <p class="page-description">Various thoughts of mine on a wide-array of tech topics.</p>
+      <span class="name">Skills<span>
+      <p class="page-description">Here's what I know that helps me create wonderful things.</p>
   </div>
   <div class="col-lg-8 col-lg-offset-2 text-center">
       <!-- <a href="#portfolio" target="_self" class="btn btn-lg btn-outline">
@@ -21,17 +21,19 @@
 
 <% end %>
 
-<section id="posts">
-        <div class="row grid-section grid-stacked">
-        <% @posts.each do |post| %>
-            <a href="<%= post.url %>" target="blank" class="col-lg-12 post grid-item grid-item-stacked">
-               <div class="grid-heading">
-                      <h3><%= post.title %></h3>
+ <section id="skills">
+    <div>
+        <div class="row grid-section">
+        <% @skills.each do |skill| %>
+            <a class="col-sm-6 skill grid-item">
+                <div class="grid-heading">
+                    <h3><%= skill.name %></h3>
                 </div>
                 <div class="grid-content">
-                    <p><%= post.subtitle %></p>
+                    <p><%= skill.description %></p>
                 </div>
             </a>
-         <% end %>
+          <% end %>
         </div>
+    </div>
 </section>

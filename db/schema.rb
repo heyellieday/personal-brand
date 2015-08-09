@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150715231611) do
+ActiveRecord::Schema.define(version: 20150809003737) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "organizations", force: :cascade do |t|
+    t.string   "name"
+    t.text     "website"
+    t.text     "description"
+    t.string   "slug"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "organizations", ["slug"], name: "index_organizations_on_slug", using: :btree
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -47,6 +58,17 @@ ActiveRecord::Schema.define(version: 20150715231611) do
   end
 
   add_index "projects", ["slug"], name: "index_projects_on_slug", unique: true, using: :btree
+
+  create_table "skills", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.text     "content"
+    t.text     "slug"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "skills", ["slug"], name: "index_skills_on_slug", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
