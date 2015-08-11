@@ -1,7 +1,7 @@
 <% content_for :header do %>
   <div class="intro-text">
-      <span class="name">Achievements<span>
-      <p class="page-description">A collection of my notable successes. </p>
+      <span class="name">Open Source<span>
+      <p class="page-description">Explore highlighted open source projects of mine.</p>
   </div>
 <style>
    header:before{
@@ -16,16 +16,16 @@
 
 <% end %>
 
- <section id="achievements">
+ <section id="projects">
     <div>
         <div class="row grid-section">
-        <% @achievements.each do |achievement| %>
-            <a target="_blank" class="col-sm-6 achievement grid-item">
+        <% @projects.each do |project| %>
+            <a href="<%= project.website %>" target="_blank" class="col-sm-6 project grid-item">
                 <div class="grid-heading">
-                    <h3 class="no-text-transform"><%= achievement.name %></h3>
+                    <h3 class="no-text-transform"><%= project.name %></h3>
                 </div>
                 <div class="grid-content">
-                    <p><%= achievement.date %> - <%= achievement.description %></p>
+                    <p><%= project.description %></p>
                 </div>
             </a>
           <% end %>

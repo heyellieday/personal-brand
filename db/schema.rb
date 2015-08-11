@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150809171034) do
+ActiveRecord::Schema.define(version: 20150810234939) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "achievements", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.text     "content"
+    t.string   "slug"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "date"
+  end
+
+  add_index "achievements", ["slug"], name: "index_achievements_on_slug", using: :btree
 
   create_table "awards", force: :cascade do |t|
     t.string   "name"
@@ -80,6 +92,9 @@ ActiveRecord::Schema.define(version: 20150809171034) do
     t.string   "state"
     t.string   "website"
     t.string   "cover_image"
+    t.string   "name"
+    t.text     "description"
+    t.text     "content"
   end
 
   add_index "projects", ["slug"], name: "index_projects_on_slug", unique: true, using: :btree

@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'achievements/index'
+
+  get 'achievements/show'
+
+  get 'organizations/index'
+
+  get 'organizations/show'
+
   get 'skills/index'
 
   get 'skills/show'

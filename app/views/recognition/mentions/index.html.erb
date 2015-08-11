@@ -15,3 +15,20 @@
 </style>
 
 <% end %>
+
+ <section id="mentions">
+    <div>
+        <div class="row grid-section">
+        <% @mentions.each do |mention| %>
+            <a href="<%= mention.url %>" target="_blank" class="col-sm-6 mention grid-item">
+                <div class="grid-heading">
+                    <h3 class="no-text-transform"><%= mention.name %></h3>
+                </div>
+                <div class="grid-content">
+                    <p><%= mention.description %></p>
+                </div>
+            </a>
+          <% end %>
+        </div>
+    </div>
+</section>
