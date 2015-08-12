@@ -2,11 +2,11 @@
 	text-transform:none;
 }
 
-.grid-stacked > :first-child{
+.grid-stacked > :nth-child(odd){
 	 border-right: 0px dotted #DCDCDC;
 }
 
-.grid-stacked > :first-child:hover{
+.grid-stacked > :nth-child(odd){
 	 border-right: 0px dotted #DCDCDC;
 }
 
@@ -72,19 +72,19 @@
     border-bottom: 1px dotted $brand-third;
     border-top: 1px dotted $brand-third;
   }
-   > :first-child{
+   > :nth-child(odd){
     border-right: 1px dotted #DCDCDC;
 
   }
-  > :first-child:hover{
+  > :nth-child(odd):hover{
     border-right: 1px dotted $brand-third;
 
   }
-   > :last-child{
+   > :nth-child(even){
     border-left: 1px dotted #DCDCDC;
 
   }
-  > :last-child:hover{
+  > :nth-child(even):hover{
     border-left: 1px dotted $brand-third;
 
   }

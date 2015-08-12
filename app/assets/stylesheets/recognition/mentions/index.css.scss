@@ -1,3 +1,18 @@
 #mentions{
 	padding:0;
 }
+
+.grid-section{
+	> .mention{
+		height: 400px;
+		.grid-heading{
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+		.grid-content{
+			padding-left: 50px;
+			padding-right: 50px;
+
+		}
+	}
+}
