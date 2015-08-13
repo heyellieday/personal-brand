@@ -144,3 +144,27 @@ projects.each do |project|
 	Project.create(name: project[:name], description: project[:description], website: project[:website])
 
 end
+
+skills = [
+	{
+		name: "Web App Development",
+		description: "Working with modern web development languages such as Javascript and Ruby, I am able to create robust, scalable web platforms."
+	},
+	{
+		name: "Technical Advising",
+		description: "I advise on building web applications from the early planning stages, to the final features. Using my experience building apps for many clients, I know what tools are best for a particular project."
+	},
+	{
+		name: "Front-end Development",
+		description: "I use the latest tools and frameworks, such as AngularJS & EmberJS, to craft responsive and interactive web experiences."
+	},
+	{
+		name: "Deployment & Hosting",
+		description: "Utilizing reputable cloud services such as Heroku and Codeship, I manage many web applications in a consistent, scalable manner."
+	}
+]
+skills.each do |skill|
+
+	Skill.create(name: skill[:name], description: skill[:description])
+
+end
