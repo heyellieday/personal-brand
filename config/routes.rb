@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get 'posts/index'
 
+  get 'resume', to: "pages#resume"
+
   #get 'signup' => redirect('/404.html')
 
   devise_for :users, path: "", path_names: {
