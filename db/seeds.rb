@@ -131,7 +131,7 @@ projects = [
 	{
 		name: "Twitter Lists Tool",
 		description: "Homework for my Sprout Social Interview, a Twitter Lists tool, written in Backbone with the help of a Sinatra back-end, RequireJS, jQuery, and a bunch of other goodies.",
-		website: "https://github.com/heyellieday/catsg"
+		website: "https://github.com/heyellieday/sprout-homework"
 	},
 	{
 		name: "CATSG Theme",
